@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">calculadoraMaterias</string>
+    <string name="app_name">calculadora</string>
+    <string name="m1">P y E.</string>
+    <string name="m2">Física IV</string>
+    <string name="m3">Química IV</string>
+    <string name="m4">Inglés IV</string>
+    <string name="m5">OJyP IV</string>
+    <string name="m6">MAP</string>
+    <string name="m7">Soporte S.</string>
+    <string name="m8">Lab. PTI IV</string>
+    <string name="m9">Proyecto I.</string>
+    <string name="btn">Lista</string>
+    <string name="btn2">Calficaciones</string>
+    <string name="t1">Extras </string>
+    <string name="t2">De mayor a menor  </string>
+    
+    
 </resources>

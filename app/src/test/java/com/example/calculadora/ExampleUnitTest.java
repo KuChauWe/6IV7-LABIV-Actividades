@@ -1,4 +1,4 @@
-package com.example.calculadoramaterias;
+package com.example.calculadora;
 
 import org.junit.Test;
 
