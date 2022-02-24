@@ -97,7 +97,15 @@ public class MainActivity extends AppCompatActivity {
         promat8= (EditText)findViewById(R.id.promat8);
         promat9= (EditText)findViewById(R.id.promat9);
 
-
+        promat1.setText("0");
+        promat2.setText("0");
+        promat3.setText("0");
+        promat4.setText("0");
+        promat5.setText("0");
+        promat6.setText("0");
+        promat7.setText("0");
+        promat8.setText("0");
+        promat9.setText("0");
 
 
 
@@ -239,15 +247,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public  void  cambio (View view){
         Intent i = new Intent(this,MainActivity2.class);
-        i.putExtra("promat1", promat1.getText());
-        i.putExtra("promat2", promat2.getText());
-        i.putExtra("promat3", promat3.getText());
-        i.putExtra("promat4", promat4.getText());
-        i.putExtra("promat5", promat5.getText());
-        i.putExtra("promat6", promat6.getText());
-        i.putExtra("promat7", promat7.getText());
-        i.putExtra("promat8", promat8.getText());
-        i.putExtra("promat9", promat9.getText());
+        i.putExtra("promat1", promat1.getText().toString());
+        i.putExtra("promat2", promat2.getText().toString());
+        i.putExtra("promat3", promat3.getText().toString());
+        i.putExtra("promat4", promat4.getText().toString());
+        i.putExtra("promat5", promat5.getText().toString());
+        i.putExtra("promat6", promat6.getText().toString());
+        i.putExtra("promat7", promat7.getText().toString());
+        i.putExtra("promat8", promat8.getText().toString());
+        i.putExtra("promat9", promat9.getText().toString());
         startActivity(i);
 
     }

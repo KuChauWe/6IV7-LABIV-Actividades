@@ -17,7 +17,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         columna1= findViewById(R.id.Extras);
-        columna1= findViewById(R.id.masamenos);
+        columna2= findViewById(R.id.masamenos);
          promat1= getIntent().getStringExtra("promat1");
          promat2= getIntent().getStringExtra("promat2");
          promat3=getIntent().getStringExtra("promat3");
@@ -65,11 +65,12 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
                 }
             }
         }
-        TextView M= new TextView(MainActivity2.this);
+
         for(int i = 0; i < 9; i++){
             if(a[i]==m1){
 
                 if(M1 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("P y E.");
                     columna2.addView(M);
                     M1=1;
@@ -78,6 +79,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m2){
 
                 if(M2 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Física IV");
                     columna2.addView(M);
                     M2=1;
@@ -86,6 +88,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m3){
 
                 if(M3 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Química IV");
                     columna2.addView(M);
                     M3=1;
@@ -94,6 +97,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m4){
 
                 if(M4 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Inglés IV");
                     columna2.addView(M);
                     M4=1;
@@ -102,6 +106,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m5){
 
                 if(M5 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("OJyP IV");
                     columna2.addView(M);
                     M5=1;
@@ -110,6 +115,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m6){
 
                 if(M6 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("MAP");
                     columna2.addView(M);
                     M6=1;
@@ -118,6 +124,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m7){
 
                 if(M7 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Soporte de S.");
                     columna2.addView(M);
                     M7=1;
@@ -126,6 +133,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m8){
 
                 if(M8 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Lab. PTI IV");
                     columna2.addView(M);
                     M8=1;
@@ -134,6 +142,7 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
             if(a[i]==m9){
 
                 if(M9 != 1 ) {
+                    TextView M= new TextView(MainActivity2.this);
                     M.setText("Proyecto I.");
                     columna2.addView(M);
                     M9=1;
@@ -152,49 +161,49 @@ String promat1,promat2,promat3,promat4,promat5,promat6,promat7,promat8,promat9;
         Double m7= Double.parseDouble(promat7);
         Double m8= Double.parseDouble(promat8);
         Double m9= Double.parseDouble(promat9);
-        TextView M= new TextView(MainActivity2.this);
-        if(m1<6){
 
+        if(m1<6){
+            TextView M= new TextView(MainActivity2.this);
             M.setText("P y E.");
             columna1.addView(M);
         }
         if(m2<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Física IV");
             columna1.addView(M);
         }
         if(m3<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Química IV");
             columna1.addView(M);
         }
         if(m4<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Inglés IV");
             columna1.addView(M);
         }
         if(m5<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("OJyP IV");
             columna1.addView(M);
         }
         if(m6<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("MAP");
             columna1.addView(M);
         }
         if(m7<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Soporte de S.");
             columna1.addView(M);
         }
         if(m8<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Lab. PTI IV");
             columna1.addView(M);
         }
         if(m9<6){
-
+            TextView M= new TextView(MainActivity2.this);
             M.setText("Proyecto I.");
             columna1.addView(M);
         }
